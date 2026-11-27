@@ -2,6 +2,7 @@
 *.o
 *.swp
 .DS_Store
+.direnv/
 .idea
 .stack-work/
 .vscode/
