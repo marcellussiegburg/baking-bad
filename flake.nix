@@ -82,6 +82,11 @@
           #EXTRA_LIB_DIRS="${pkgs.libGL}/lib ${pkgs.libGLU}/lib";
         };
 
+        apps.default = {
+          type = "app";
+          program = "${self.packages.${system}.default}/bin/baking-bad";
+        };
+
         devShells.nix = pkgs.mkShell  {
           buildInputs = with pkgs; [
             nixfmt
