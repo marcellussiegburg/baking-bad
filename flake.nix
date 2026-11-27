@@ -14,7 +14,7 @@
     flake-utils.lib.eachDefaultSystem (system:
       let
         pkgs = nixpkgs.legacyPackages.${system};
-        hPkgs = pkgs.haskell.packages."ghc967";
+        hPkgs = pkgs.haskell.packages.ghc910;
           # need to match Stackage LTS version from stack.yaml snapshot
 
         myDevTools = [
