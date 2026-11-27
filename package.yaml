@@ -1,0 +1,29 @@
+---
+name: baking-bad
+homepage: https://github.com/marcellussiegburg/baking-bad
+license: MIT
+license-file: LICENSE
+author: marcellussiegburg
+maintainer: marcellus.siegburg@gmail.com
+language: GHC2024
+category: Game
+version: 0.0.0.1
+extra-source-files: []
+build-tools: []
+ghc-options:
+  - -Wall
+  - -Wincomplete-uni-patterns
+  - -Wincomplete-record-updates
+  - -Widentities
+  - -Wredundant-constraints
+dependencies:
+  - base
+  - gloss
+app:
+  baking-bad:
+    main: Main.hs
+    dependencies:
+      - baking-bad
+library:
+  source-dirs: src
+  exposed-modules: []

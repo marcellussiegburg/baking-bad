@@ -1,0 +1,30 @@
+root = true
+
+[*]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+indent_style = space
+indent_size = 2
+max_line_length = 80
+spelling_language = en-GB
+
+[*.{conf,el,lua,scd,sh}]
+max_line_length = 120
+
+[*.hs]
+max_line_length = 100
+
+[*.{nix,zsh}]
+max_line_length = off
+
+[*.{sh,zsh}]
+switch_case_indent = true
+
+# Lisp indentation aligns with the form above, not in steps of indent_size
+[*.el]
+indent_size = unset
+
+[*.scd]
+indent_size = 4
