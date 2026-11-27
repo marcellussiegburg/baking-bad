@@ -19,8 +19,9 @@ ghc-options:
 dependencies:
   - base
   - gloss
-app:
+executables:
   baking-bad:
+    source-dirs: app
     main: Main.hs
     dependencies:
       - baking-bad

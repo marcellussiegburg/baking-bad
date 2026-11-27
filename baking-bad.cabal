@@ -24,3 +24,16 @@ library
       base
     , gloss
   default-language: GHC2024
+
+executable baking-ad
+  main-is: Main.hs
+  other-modules:
+      Paths_baking_bad
+  hs-source-dirs:
+      app
+  ghc-options: -Wall -Wincomplete-uni-patterns -Wincomplete-record-updates -Widentities -Wredundant-constraints
+  build-depends:
+      baking-bad
+    , base
+    , gloss
+  default-language: GHC2024
