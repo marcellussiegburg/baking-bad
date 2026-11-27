@@ -13,12 +13,16 @@
   outputs = { self, nixpkgs, flake-utils }:
     flake-utils.lib.eachDefaultSystem (system:
       let
-        pkgs = nixpkgs.legacyPackages.${system};
+        pkgs = import nixpkgs {
+          inherit system;
+          config = {
+            problems.handlers.retrie.broken = "warn";
+          };
+        };
         hPkgs = pkgs.haskell.packages.ghc910;
+        retrie = pkgs.haskell.packages.ghc984.retrie;
 
-        
-
-        myDevTools = [
+        haskellDevTools = [
           stack-wrapped # Stack, haskell package manager
           hPkgs.ghc # GHC compiler in the desired version (will be available on PATH)
           hPkgs.ghcid # Continuous terminal Haskell compile checker
@@ -27,8 +31,8 @@
           hPkgs.hoogle # Lookup Haskell documentation
           hPkgs.haskell-language-server # LSP server for editor
           hPkgs.implicit-hie # auto generate LSP hie.yaml file from cabal
-          #hPkgs.retrie # Haskell refactoring tool (broken, fixing it...)
           hPkgs.cabal-install
+          retrie # Haskell refactoring tool (downgraded)
 
           # External dependencies of gloss
           pkgs.libGL
@@ -39,10 +43,6 @@
           pkgs.openal
           pkgs.freealut
 
-        ];
-
-        tinasDevTools = with pkgs; [
-          vym
         ];
 
         # Wrap Stack to work with our Nix integration. We do not want to modify
@@ -68,11 +68,11 @@
 
         packages.default = hPkgs.developPackage {
             root = ./.;
-            name = "glossy-ball-demo";
+            name = "baking-bad";
         };
 
         devShells.default = pkgs.mkShell {
-          buildInputs = myDevTools ++ tinasDevTools;
+          buildInputs = haskellDevTools;
 
           # Freeglut is a dynamic runtime dependency of gloss,
           # so we have to point `LD_LIBRARY_PATH` to it.
@@ -80,6 +80,12 @@
           # Inform stack on where to find `libGL.so` and the concrete OpenGL library.
           #EXTRA_INCLUDE_DIRS="${pkgs.libGL}/include";
           #EXTRA_LIB_DIRS="${pkgs.libGL}/lib ${pkgs.libGLU}/lib";
+        };
+
+        devShells.nix = pkgs.mkShell  {
+          buildInputs = with pkgs; [
+            nixfmt
+          ];
         };
       });
 }
