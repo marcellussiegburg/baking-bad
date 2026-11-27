@@ -15,7 +15,8 @@
       let
         pkgs = nixpkgs.legacyPackages.${system};
         hPkgs = pkgs.haskell.packages.ghc910;
-          # need to match Stackage LTS version from stack.yaml snapshot
+
+        
 
         myDevTools = [
           stack-wrapped # Stack, haskell package manager
@@ -26,7 +27,7 @@
           hPkgs.hoogle # Lookup Haskell documentation
           hPkgs.haskell-language-server # LSP server for editor
           hPkgs.implicit-hie # auto generate LSP hie.yaml file from cabal
-          hPkgs.retrie # Haskell refactoring tool
+          #hPkgs.retrie # Haskell refactoring tool (broken, fixing it...)
           hPkgs.cabal-install
 
           # External dependencies of gloss
