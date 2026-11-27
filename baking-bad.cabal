@@ -25,7 +25,7 @@ library
     , gloss
   default-language: GHC2024
 
-executable baking-ad
+executable baking-bad
   main-is: Main.hs
   other-modules:
       Paths_baking_bad
