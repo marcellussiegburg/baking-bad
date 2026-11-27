@@ -5,9 +5,9 @@ import Graphics.Gloss
 import Graphics.Gloss.Interface.IO.Game
 import qualified Graphics.Gloss.Interface.IO.Game as Graphics.Gloss
 
-
 --OpenAL
 import Control.Monad (filterM, when, void)
+import Data.Maybe (listToMaybe)
 import Control.Concurrent
 import Sound.ALUT
 import Data.IORef
@@ -16,7 +16,7 @@ import System.IO.Unsafe
 --External Files
 import System.FilePath ((</>))
 import System.Directory (doesFileExist)
-import Data.Maybe
+import Paths_baking_bad (getDataFileName)
 
 --State
 data GameState = GameState {
@@ -24,13 +24,13 @@ data GameState = GameState {
     framecounter :: Int 
 }
 
---File Management
 findAsset :: FilePath -> IO (Maybe FilePath)
-findAsset filename = do
-    let paths = map (\dirpath -> dirpath </> filename) [ "./assets", "/share/glossy-ball-demo/assets" ]
-    exists <- mapM doesFileExist paths
-    return $ listToMaybe [path | (path, True) <- zip paths exists]
-
+findAsset rel = do
+    installed <- getDataFileName rel
+    let candidates = [installed, "assets" </> rel]
+    hits <- filterM doesFileExist candidates
+    pure (listToMaybe hits)
+    
 --Graphics
 windowWidth :: Int
 windowWidth = 1280
@@ -107,8 +107,8 @@ playFile fileName = do
 main :: IO ()
 main = do
     withProgNameAndArgs runALUT $ \progName args -> do
-        maybePath <- findAsset "bounce.wav"
+        maybePath <- findAsset "assets/bounce.wav"
         case maybePath of
             Just path -> playFile path
-            Nothing -> putStrLn "Some error string"
+            Nothing -> putStrLn "asset not found: assets/bounce.wav"
         gameloop

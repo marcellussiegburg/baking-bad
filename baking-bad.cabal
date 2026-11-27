@@ -13,6 +13,8 @@ maintainer:     marcellus.siegburg@gmail.com
 license:        MIT
 license-file:   LICENSE
 build-type:     Simple
+data-files:
+    assets/bounce.wav
 
 library
   other-modules:
