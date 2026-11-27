@@ -17,7 +17,10 @@ ghc-options:
   - -Widentities
   - -Wredundant-constraints
 dependencies:
+  - ALUT
   - base
+  - directory
+  - filepath
   - gloss
 executables:
   baking-bad:

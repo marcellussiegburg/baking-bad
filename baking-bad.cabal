@@ -21,7 +21,10 @@ library
       src
   ghc-options: -Wall -Wincomplete-uni-patterns -Wincomplete-record-updates -Widentities -Wredundant-constraints
   build-depends:
-      base
+      ALUT
+    , base
+    , directory
+    , filepath
     , gloss
   default-language: GHC2024
 
@@ -33,7 +36,10 @@ executable baking-bad
       app
   ghc-options: -Wall -Wincomplete-uni-patterns -Wincomplete-record-updates -Widentities -Wredundant-constraints
   build-depends:
-      baking-bad
+      ALUT
+    , baking-bad
     , base
+    , directory
+    , filepath
     , gloss
   default-language: GHC2024
