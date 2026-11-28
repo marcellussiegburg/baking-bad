@@ -25,6 +25,16 @@ executables:
     main: Main.hs
     dependencies:
       - baking-bad
+      
 library:
   source-dirs: src
-  exposed-modules: []
+  exposed-modules:
+    - Bakingbad
+
+tests:
+  baking-bad-test:
+    source-dirs: test
+    main: Foods.hs
+    dependencies:
+      - baking-bad
+      - hspec
