@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="512"
+   height="512"
+   viewBox="0 0 512 512"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4.2 (ebf0e940d0, 2025-05-08)"
+   sodipodi:docname="butter.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     inkscape:zoom="0.92863124"
+     inkscape:cx="79.687175"
+     inkscape:cy="256.29118"
+     inkscape:window-width="1920"
+     inkscape:window-height="1011"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1">
+    <rect
+       x="129.43277"
+       y="391.87381"
+       width="250.99946"
+       height="102.97414"
+       id="rect9" />
+    <rect
+       x="121.56669"
+       y="386.15302"
+       width="267.44672"
+       height="102.25904"
+       id="rect8" />
+    <rect
+       x="115.13081"
+       y="393.304"
+       width="290.32986"
+       height="94.392961"
+       id="rect7" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#fffc4a;fill-opacity:1;stroke-width:2.47067;stroke-linecap:square"
+       id="rect1"
+       width="450.82355"
+       height="168.31682"
+       x="30.588236"
+       y="309.68811"
+       ry="29.020142"
+       inkscape:label="rect1" />
+    <text
+       xml:space="preserve"
+       id="text9"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:66.6667px;font-family:Serif;-inkscape-font-specification:'Serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect9);display:inline;fill:#cdca00;fill-opacity:1;stroke:#969400;stroke-width:2;stroke-linecap:square;stroke-dasharray:none;stroke-opacity:1"
+       transform="matrix(1.31615,0,0,1.1594868,-76.919837,-97.688008)"><tspan
+         x="129.43359"
+         y="450.85745"
+         id="tspan2">Butter</tspan></text>
+    <rect
+       style="fill:#4848ff;fill-opacity:1;stroke-width:8.98743;stroke-linecap:square"
+       id="rect2"
+       width="512"
+       height="33.995026"
+       x="-2.8421709e-14"
+       y="478.00497"
+       ry="1.1131073" />
+  </g>
+</svg>

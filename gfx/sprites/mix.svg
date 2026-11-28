@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="512"
+   height="512"
+   viewBox="0 0 512 512"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4.2 (ebf0e940d0, 2025-05-08)"
+   sodipodi:docname="mix.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     inkscape:zoom="0.99320896"
+     inkscape:cx="107.73161"
+     inkscape:cy="378.57089"
+     inkscape:window-width="1920"
+     inkscape:window-height="1011"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1">
+    <marker
+       style="overflow:visible"
+       id="marker4"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Wide, rounded arrow"
+       markerWidth="1"
+       markerHeight="1"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:none;stroke:context-stroke;stroke-width:1;stroke-linecap:round"
+         d="M 3,-3 0,0 3,3"
+         transform="rotate(180,0.125,0)"
+         sodipodi:nodetypes="ccc"
+         id="path4" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="ArrowWideRounded"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Wide, rounded arrow"
+       markerWidth="1"
+       markerHeight="1"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:none;stroke:context-stroke;stroke-width:1;stroke-linecap:round"
+         d="M 3,-3 0,0 3,3"
+         transform="rotate(180,0.125,0)"
+         sodipodi:nodetypes="ccc"
+         id="path2" />
+    </marker>
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <ellipse
+       style="fill:none;stroke:#000000;stroke-width:14.6972;stroke-linecap:square;stroke-dasharray:none;stroke-dashoffset:0;marker-mid:url(#ArrowWideRounded);marker-end:url(#marker4)"
+       id="path1"
+       cx="360.6171"
+       cy="-35.364136"
+       rx="243.40587"
+       ry="246.61807"
+       transform="matrix(0.6322659,0.77475147,-0.79159618,0.61104459,0,0)" />
+    <path
+       sodipodi:type="spiral"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:6;stroke-dasharray:none"
+       id="path5"
+       sodipodi:cx="200.9742"
+       sodipodi:cy="155.54852"
+       sodipodi:expansion="1"
+       sodipodi:revolution="3"
+       sodipodi:radius="165.10539"
+       sodipodi:argument="-18.179373"
+       sodipodi:t0="0"
+       d="m 200.9742,155.54852 c 6.48763,5.14179 -3.73026,11.28197 -8.54599,10.78287 -13.05033,-1.35254 -16.98172,-17.41292 -13.01975,-27.87484 7.08704,-18.71391 30.55749,-23.52634 47.2037,-15.25663 24.42897,12.13614 30.23942,43.87116 17.49351,66.53255 -16.9883,30.20406 -57.24364,37.02275 -85.8614,19.73039 C 122.23174,187.70219 114.40216,138.819 136.27699,104.27261 162.77034,62.432295 220.33664,53.590349 260.7961,80.068453 308.47617,111.27198 318.33157,177.55358 287.23713,223.91641 251.33738,277.44414 176.32006,288.31379 124.06032,252.59433 64.679485,212.0076 52.794933,128.24076 93.145526,70.088662 138.41279,4.8507984 230.93891,-8.049161 294.98004,36.936985 366.07784,86.880133 379.99362,188.17269 330.3686,258.10036"
+       transform="matrix(-1.0839746,0,0,1.0482188,487.38876,100.14918)" />
+  </g>
+</svg>
