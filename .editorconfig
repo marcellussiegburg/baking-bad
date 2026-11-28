@@ -16,7 +16,7 @@ max_line_length = 120
 [*.hs]
 max_line_length = 100
 
-[*.{nix,zsh}]
+[*.{cabal,nix,zsh}]
 max_line_length = off
 
 [*.{sh,zsh}]
